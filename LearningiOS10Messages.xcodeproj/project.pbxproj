@@ -13,6 +13,8 @@
 		B08F71761F9D625100CC47C3 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71751F9D625100CC47C3 /* MessagesViewController.swift */; };
 		B08F71791F9D625100CC47C3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F71771F9D625100CC47C3 /* MainInterface.storyboard */; };
 		B08F717B1F9D625100CC47C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F717A1F9D625100CC47C3 /* Assets.xcassets */; };
+		B08F718A1F9D6E4500CC47C3 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71891F9D6E4500CC47C3 /* GameModel.swift */; };
+		B08F718C1F9D6E5600CC47C3 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B08F71781F9D625100CC47C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		B08F717A1F9D625100CC47C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B08F717C1F9D625100CC47C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B08F71891F9D6E4500CC47C3 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +106,22 @@
 		B08F71741F9D625100CC47C3 /* LearningiOS10Messages MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B08F71861F9D6E0200CC47C3 /* Model */,
 				B08F71751F9D625100CC47C3 /* MessagesViewController.swift */,
 				B08F71771F9D625100CC47C3 /* MainInterface.storyboard */,
 				B08F717A1F9D625100CC47C3 /* Assets.xcassets */,
 				B08F717C1F9D625100CC47C3 /* Info.plist */,
 			);
 			path = "LearningiOS10Messages MessagesExtension";
+			sourceTree = "<group>";
+		};
+		B08F71861F9D6E0200CC47C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B08F71891F9D6E4500CC47C3 /* GameModel.swift */,
+				B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08F71761F9D625100CC47C3 /* MessagesViewController.swift in Sources */,
+				B08F718A1F9D6E4500CC47C3 /* GameModel.swift in Sources */,
+				B08F718C1F9D6E5600CC47C3 /* GameConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
