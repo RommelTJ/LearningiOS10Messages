@@ -19,6 +19,7 @@
 		B08F71911F9D713B00CC47C3 /* ShipLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71901F9D713B00CC47C3 /* ShipLocationViewController.swift */; };
 		B08F71941F9D72C300CC47C3 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71931F9D72C300CC47C3 /* GameBoardView.swift */; };
 		B08F71971F9D737B00CC47C3 /* UIImage+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71961F9D737B00CC47C3 /* UIImage+Snapshot.swift */; };
+		B08F71991F9D749E00CC47C3 /* ShipDestroyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71981F9D749E00CC47C3 /* ShipDestroyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B08F71901F9D713B00CC47C3 /* ShipLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipLocationViewController.swift; sourceTree = "<group>"; };
 		B08F71931F9D72C300CC47C3 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 		B08F71961F9D737B00CC47C3 /* UIImage+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Snapshot.swift"; sourceTree = "<group>"; };
+		B08F71981F9D749E00CC47C3 /* ShipDestroyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDestroyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				B08F718E1F9D706100CC47C3 /* GameStartViewController.swift */,
 				B08F71901F9D713B00CC47C3 /* ShipLocationViewController.swift */,
+				B08F71981F9D749E00CC47C3 /* ShipDestroyViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				B08F718C1F9D6E5600CC47C3 /* GameConstants.swift in Sources */,
 				B08F718F1F9D706100CC47C3 /* GameStartViewController.swift in Sources */,
 				B08F71941F9D72C300CC47C3 /* GameBoardView.swift in Sources */,
+				B08F71991F9D749E00CC47C3 /* ShipDestroyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
