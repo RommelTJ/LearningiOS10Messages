@@ -120,7 +120,6 @@
 				B08F71921F9D728B00CC47C3 /* View */,
 				B08F718D1F9D703300CC47C3 /* Controllers */,
 				B08F71861F9D6E0200CC47C3 /* Model */,
-				B08F71751F9D625100CC47C3 /* MessagesViewController.swift */,
 				B08F71771F9D625100CC47C3 /* MainInterface.storyboard */,
 				B08F717A1F9D625100CC47C3 /* Assets.xcassets */,
 				B08F717C1F9D625100CC47C3 /* Info.plist */,
@@ -140,6 +139,7 @@
 		B08F718D1F9D703300CC47C3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B08F71751F9D625100CC47C3 /* MessagesViewController.swift */,
 				B08F718E1F9D706100CC47C3 /* GameStartViewController.swift */,
 				B08F71901F9D713B00CC47C3 /* ShipLocationViewController.swift */,
 				B08F71981F9D749E00CC47C3 /* ShipDestroyViewController.swift */,
