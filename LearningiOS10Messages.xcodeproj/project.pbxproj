@@ -15,6 +15,7 @@
 		B08F717B1F9D625100CC47C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F717A1F9D625100CC47C3 /* Assets.xcassets */; };
 		B08F718A1F9D6E4500CC47C3 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71891F9D6E4500CC47C3 /* GameModel.swift */; };
 		B08F718C1F9D6E5600CC47C3 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */; };
+		B08F718F1F9D706100CC47C3 /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F718E1F9D706100CC47C3 /* GameStartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B08F717C1F9D625100CC47C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08F71891F9D6E4500CC47C3 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		B08F718E1F9D706100CC47C3 /* GameStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		B08F71741F9D625100CC47C3 /* LearningiOS10Messages MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B08F718D1F9D703300CC47C3 /* Controllers */,
 				B08F71861F9D6E0200CC47C3 /* Model */,
 				B08F71751F9D625100CC47C3 /* MessagesViewController.swift */,
 				B08F71771F9D625100CC47C3 /* MainInterface.storyboard */,
@@ -122,6 +125,14 @@
 				B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B08F718D1F9D703300CC47C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B08F718E1F9D706100CC47C3 /* GameStartViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 				B08F71761F9D625100CC47C3 /* MessagesViewController.swift in Sources */,
 				B08F718A1F9D6E4500CC47C3 /* GameModel.swift in Sources */,
 				B08F718C1F9D6E5600CC47C3 /* GameConstants.swift in Sources */,
+				B08F718F1F9D706100CC47C3 /* GameStartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

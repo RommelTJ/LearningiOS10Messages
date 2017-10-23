@@ -52,7 +52,7 @@
                                 <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
                                 <state key="normal" title="Start game"/>
                                 <connections>
-                                    <action selector="startGame:" destination="3Mk-P9-rsx" eventType="touchUpInside" id="PeJ-wl-8PB"/>
+                                    <action selector="startGame:" destination="3Mk-P9-rsx" eventType="touchUpInside" id="Oy0-kM-RS4"/>
                                 </connections>
                             </button>
                         </subviews>
