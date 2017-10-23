@@ -13,6 +13,13 @@
 		B08F71761F9D625100CC47C3 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71751F9D625100CC47C3 /* MessagesViewController.swift */; };
 		B08F71791F9D625100CC47C3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F71771F9D625100CC47C3 /* MainInterface.storyboard */; };
 		B08F717B1F9D625100CC47C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F717A1F9D625100CC47C3 /* Assets.xcassets */; };
+		B08F718A1F9D6E4500CC47C3 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71891F9D6E4500CC47C3 /* GameModel.swift */; };
+		B08F718C1F9D6E5600CC47C3 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */; };
+		B08F718F1F9D706100CC47C3 /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F718E1F9D706100CC47C3 /* GameStartViewController.swift */; };
+		B08F71911F9D713B00CC47C3 /* ShipLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71901F9D713B00CC47C3 /* ShipLocationViewController.swift */; };
+		B08F71941F9D72C300CC47C3 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71931F9D72C300CC47C3 /* GameBoardView.swift */; };
+		B08F71971F9D737B00CC47C3 /* UIImage+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71961F9D737B00CC47C3 /* UIImage+Snapshot.swift */; };
+		B08F71991F9D749E00CC47C3 /* ShipDestroyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F71981F9D749E00CC47C3 /* ShipDestroyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		B08F71781F9D625100CC47C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		B08F717A1F9D625100CC47C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B08F717C1F9D625100CC47C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B08F71891F9D6E4500CC47C3 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		B08F718E1F9D706100CC47C3 /* GameStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
+		B08F71901F9D713B00CC47C3 /* ShipLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipLocationViewController.swift; sourceTree = "<group>"; };
+		B08F71931F9D72C300CC47C3 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		B08F71961F9D737B00CC47C3 /* UIImage+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Snapshot.swift"; sourceTree = "<group>"; };
+		B08F71981F9D749E00CC47C3 /* ShipDestroyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDestroyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +116,51 @@
 		B08F71741F9D625100CC47C3 /* LearningiOS10Messages MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				B08F71751F9D625100CC47C3 /* MessagesViewController.swift */,
+				B08F71951F9D735700CC47C3 /* Util */,
+				B08F71921F9D728B00CC47C3 /* View */,
+				B08F718D1F9D703300CC47C3 /* Controllers */,
+				B08F71861F9D6E0200CC47C3 /* Model */,
 				B08F71771F9D625100CC47C3 /* MainInterface.storyboard */,
 				B08F717A1F9D625100CC47C3 /* Assets.xcassets */,
 				B08F717C1F9D625100CC47C3 /* Info.plist */,
 			);
 			path = "LearningiOS10Messages MessagesExtension";
+			sourceTree = "<group>";
+		};
+		B08F71861F9D6E0200CC47C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B08F71891F9D6E4500CC47C3 /* GameModel.swift */,
+				B08F718B1F9D6E5600CC47C3 /* GameConstants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B08F718D1F9D703300CC47C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B08F71751F9D625100CC47C3 /* MessagesViewController.swift */,
+				B08F718E1F9D706100CC47C3 /* GameStartViewController.swift */,
+				B08F71901F9D713B00CC47C3 /* ShipLocationViewController.swift */,
+				B08F71981F9D749E00CC47C3 /* ShipDestroyViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B08F71921F9D728B00CC47C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B08F71931F9D72C300CC47C3 /* GameBoardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B08F71951F9D735700CC47C3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B08F71961F9D737B00CC47C3 /* UIImage+Snapshot.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08F71761F9D625100CC47C3 /* MessagesViewController.swift in Sources */,
+				B08F71911F9D713B00CC47C3 /* ShipLocationViewController.swift in Sources */,
+				B08F71971F9D737B00CC47C3 /* UIImage+Snapshot.swift in Sources */,
+				B08F718A1F9D6E4500CC47C3 /* GameModel.swift in Sources */,
+				B08F718C1F9D6E5600CC47C3 /* GameConstants.swift in Sources */,
+				B08F718F1F9D706100CC47C3 /* GameStartViewController.swift in Sources */,
+				B08F71941F9D72C300CC47C3 /* GameBoardView.swift in Sources */,
+				B08F71991F9D749E00CC47C3 /* ShipDestroyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
