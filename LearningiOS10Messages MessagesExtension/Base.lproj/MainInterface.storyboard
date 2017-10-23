@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,22 +14,11 @@
         <!--Messages View Controller-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="LearningiOS10Messages_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="d1e-fi-ked" secondAttribute="centerY" id="H0s-hz-dDP"/>
-                            <constraint firstAttribute="centerX" secondItem="d1e-fi-ked" secondAttribute="centerX" id="wFy-hW-Bib"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -32,6 +26,176 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Game Start View Controller-->
+        <scene sceneID="bOs-gk-v1D">
+            <objects>
+                <viewController storyboardIdentifier="GameStartViewController" id="3Mk-P9-rsx" customClass="GameStartViewController" customModule="LearningiOS10Messages_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uno-3x-UFW"/>
+                        <viewControllerLayoutGuide type="bottom" id="bnT-Jk-7ts"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wnW-CI-hkV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battleships" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sht-Os-ssB">
+                                <rect key="frame" x="108.5" y="261" width="158.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLT-xi-8me">
+                                <rect key="frame" x="125" y="317" width="125" height="33"/>
+                                <color key="backgroundColor" red="0.98788275219999999" green="0.99481446100000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
+                                <state key="normal" title="Start game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="3Mk-P9-rsx" eventType="touchUpInside" id="PeJ-wl-8PB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56980104499999995" green="0.76340440779999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vLT-xi-8me" firstAttribute="centerY" secondItem="wnW-CI-hkV" secondAttribute="centerY" id="CPh-5g-8Mz"/>
+                            <constraint firstItem="sht-Os-ssB" firstAttribute="centerX" secondItem="wnW-CI-hkV" secondAttribute="centerX" id="Vfe-6Q-wzE"/>
+                            <constraint firstItem="sht-Os-ssB" firstAttribute="bottom" secondItem="vLT-xi-8me" secondAttribute="top" constant="-20" id="hGT-Qs-PGR"/>
+                            <constraint firstItem="vLT-xi-8me" firstAttribute="centerX" secondItem="wnW-CI-hkV" secondAttribute="centerX" id="rBZ-so-szS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Prv-M3-gun"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fF-es-lcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="-140"/>
+        </scene>
+        <!--Ship Location View Controller-->
+        <scene sceneID="fbN-Rx-D3v">
+            <objects>
+                <viewController storyboardIdentifier="ShipLocationViewController" id="UdS-ar-Lxy" customClass="ShipLocationViewController" customModule="LearningiOS10Messages_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bub-Vl-nG9"/>
+                        <viewControllerLayoutGuide type="bottom" id="e0U-oQ-kiV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="drx-SL-YJR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="der-Mo-PcI">
+                                <rect key="frame" x="136.5" y="614" width="102" height="33"/>
+                                <color key="backgroundColor" red="0.98788275219999999" green="0.99481446100000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
+                                <state key="normal" title="Finished"/>
+                                <connections>
+                                    <action selector="completedShipLocationSelection:" destination="UdS-ar-Lxy" eventType="touchUpInside" id="odf-DS-0zR"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2sA-xp-LIk" customClass="GameBoardView" customModule="MessagesExtension" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2sA-xp-LIk" secondAttribute="height" multiplier="1:1" id="bBp-Cd-7iG"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U0w-yj-q24">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg0-F4-F2u">
+                                <rect key="frame" x="16" y="25" width="99" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56862745100000001" green="0.76470588240000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cg0-F4-F2u" firstAttribute="leading" secondItem="drx-SL-YJR" secondAttribute="leadingMargin" id="1B7-Jn-dnN"/>
+                            <constraint firstItem="der-Mo-PcI" firstAttribute="centerX" secondItem="drx-SL-YJR" secondAttribute="centerX" id="2Os-lP-INa"/>
+                            <constraint firstItem="2sA-xp-LIk" firstAttribute="centerX" secondItem="drx-SL-YJR" secondAttribute="centerX" id="Bte-X5-Rzs"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cg0-F4-F2u" secondAttribute="trailingMargin" id="Htu-sn-bS4"/>
+                            <constraint firstItem="2sA-xp-LIk" firstAttribute="centerY" secondItem="drx-SL-YJR" secondAttribute="centerY" id="MYz-Qv-PHJ"/>
+                            <constraint firstItem="aLk-Ha-F9t" firstAttribute="bottom" secondItem="der-Mo-PcI" secondAttribute="bottom" constant="20" id="RR0-CX-mdW"/>
+                            <constraint firstItem="2sA-xp-LIk" firstAttribute="width" secondItem="drx-SL-YJR" secondAttribute="width" id="h1u-0b-cg0"/>
+                            <constraint firstItem="cg0-F4-F2u" firstAttribute="top" secondItem="aLk-Ha-F9t" secondAttribute="top" constant="5" id="lUx-cK-qG7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aLk-Ha-F9t"/>
+                    </view>
+                    <connections>
+                        <outlet property="finishedButton" destination="der-Mo-PcI" id="BVo-dK-Xby"/>
+                        <outlet property="gameBoard" destination="2sA-xp-LIk" id="oVc-4u-t1u"/>
+                        <outlet property="remainingLabel" destination="cg0-F4-F2u" id="xVP-Xo-tcI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5RR-Y5-9tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="523"/>
+        </scene>
+        <!--Ship Destroy View Controller-->
+        <scene sceneID="ws2-On-ui7">
+            <objects>
+                <viewController storyboardIdentifier="ShipDestroyViewController" id="5z0-1g-xVF" customClass="ShipDestroyViewController" customModule="LearningiOS10Messages_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2zn-Fk-85s"/>
+                        <viewControllerLayoutGuide type="bottom" id="PIe-KR-GXn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uy0-uR-BSA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-lU-dWf" customClass="GameBoardView" customModule="MessagesExtension" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K7a-lU-dWf" secondAttribute="height" multiplier="1:1" id="mX0-Zd-WsO"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EeT-dJ-QKm">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attempts: 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wq-lb-QMK">
+                                <rect key="frame" x="16" y="25" width="89.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ships: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D09-ZL-UiT">
+                                <rect key="frame" x="297.5" y="25" width="61.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56862745100000001" green="0.76470588240000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K7a-lU-dWf" firstAttribute="width" secondItem="uy0-uR-BSA" secondAttribute="width" id="4Zg-yS-j0K"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Wq-lb-QMK" secondAttribute="trailingMargin" id="Ggh-SQ-f1B"/>
+                            <constraint firstItem="D09-ZL-UiT" firstAttribute="top" secondItem="MqP-JM-Rf4" secondAttribute="top" constant="5" id="MrI-ev-hYL"/>
+                            <constraint firstItem="6Wq-lb-QMK" firstAttribute="leading" secondItem="uy0-uR-BSA" secondAttribute="leadingMargin" id="QhF-IB-zGj"/>
+                            <constraint firstItem="K7a-lU-dWf" firstAttribute="centerX" secondItem="uy0-uR-BSA" secondAttribute="centerX" id="TYe-Yf-lNp"/>
+                            <constraint firstItem="D09-ZL-UiT" firstAttribute="trailing" secondItem="uy0-uR-BSA" secondAttribute="trailingMargin" id="UAj-jQ-h8O"/>
+                            <constraint firstItem="D09-ZL-UiT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uy0-uR-BSA" secondAttribute="leadingMargin" id="eIM-m9-mx4"/>
+                            <constraint firstItem="6Wq-lb-QMK" firstAttribute="top" secondItem="MqP-JM-Rf4" secondAttribute="top" constant="5" id="f4H-5e-Q8P"/>
+                            <constraint firstItem="K7a-lU-dWf" firstAttribute="centerY" secondItem="uy0-uR-BSA" secondAttribute="centerY" id="mpW-iV-wLH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MqP-JM-Rf4"/>
+                    </view>
+                    <connections>
+                        <outlet property="attemptsLabel" destination="6Wq-lb-QMK" id="Nbx-I2-Lsy"/>
+                        <outlet property="gameBoard" destination="K7a-lU-dWf" id="MjP-mm-DhZ"/>
+                        <outlet property="shipsLabel" destination="D09-ZL-UiT" id="U9C-wq-AQd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqi-GB-JWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="1180"/>
         </scene>
     </scenes>
 </document>
